@@ -3,14 +3,26 @@
   <head>
     
     <title>Name Tag</title>
-
+    <script>
+    function inputForm (newName)
+    {
+      console.log(newName);
+    document.getElementById('demo').innerHTML = newName;
+    }
+    </script>
   </head>
   <body>
+
+    <form>
+      <input type="text" id="newName" placeholder="Enter name here"/>
+      <input type="button" onclick="inputForm(newName.value);" value="Submit"/>
+    </form>
+
     <ul>
      
       <li> <span>Hello</span>My Name is&hellip;</li>
       
-      <p> Nate</p>
+      <p id="demo"> Nate</p>
       <h3>
         Nice to meet you</h3>
       
