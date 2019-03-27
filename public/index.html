@@ -7,7 +7,9 @@
         function inputForm (newName)
     {
       // console.log(newName);
+      event.preventDefault()
     document.getElementById('demo').innerHTML = newName;
+
     }
   
     </script>
@@ -16,7 +18,7 @@
 
     <form>
       <input type="text" id="newName" placeholder="Enter name here"/>
-      <input type="button" onclick="inputForm(newName.value);" value="Submit"/>
+      <input type="submit"  onclick="inputForm(newName.value);" value="Submit"/>
     </form>
 
     <ul>
